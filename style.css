@@ -1,0 +1,13 @@
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    height: 100vh;
+}
+
+.btn-del{
+    width: 88%;
+    text-align: right;
+    margin-top: 30px;
+}

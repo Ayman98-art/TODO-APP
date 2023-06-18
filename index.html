@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="content ">
+
+<div class="ui container" style="text-align: center;">
+
+    <div class="ui action input" 
+        style="width: 75%; margin-bottom: 30px;">
+        <input id="input" type="text" placeholder="Write Your Tasks">
+        <button id="titleBtn"
+        onclick="addText()" 
+        class="ui green button">Add</button>
+    </div>
+
+    <table class="ui inverted celled table" 
+    style="width: 75%; margin: auto; text-align: center;">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>text</th>
+                <th>delete</th>
+                <th>edit</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+    <div class="btn-del">
+        <button 
+            onclick="deleteAll()" 
+            class="ui black button">
+            Delete All
+        </button>
+    </div>
+
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js" integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
